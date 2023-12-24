@@ -26,8 +26,9 @@ class _WebViewAppState extends State<WebViewApp> {
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..addJavaScriptChannel('Back',
           onMessageReceived: (JavaScriptMessage message) {
-            developer.log('The return value is ${message.message}');
-          })
+        developer.log('The return value is ${message.message}');
+      })
+      ..clearCache()
       ..loadRequest(Uri.parse("http://carbon.ccuxvideos.com/"));
     // ..loadRequest(Uri.parse("https://flutter.dev"));
     super.initState();

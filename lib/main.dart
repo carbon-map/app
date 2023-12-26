@@ -54,7 +54,8 @@ class _WebViewAppState extends State<WebViewApp> {
                   Animation<double> secondaryAnimation) {
                 return AlertDialog(
                   title: const Text("使用教學"),
-                  content: const Text("先後點選區域、縣市，再輸入年月，即可獲得碳排放的預測資料。"),
+                  content:
+                      const Text("先後點選區域、縣市，再輸入年月，即可獲得碳排放的預測資料（單位：公噸二氧化碳）。"),
                   actions: [
                     TextButton(
                       onPressed: () {
